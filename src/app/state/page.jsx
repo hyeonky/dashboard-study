@@ -39,8 +39,23 @@ const StatePage = () => {
 
   return (
     <>
+      <div className="py-30">
+        <input
+          type="text"
+          value="안녕하세요."
+          placeholder="안녕하세요."
+          className="bg-red-200"
+        />
+        <p>안녕하세요.</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <hr />
       <div>
-        <div className='flex gap-5 justify-center'>
+        <div className="flex gap-5 justify-center">
           {sortArr.map((item, index) => (
             <button
               key={index}
@@ -77,10 +92,10 @@ const StatePage = () => {
       <button onClick={increase}>증가</button>
 
       <hr />
-      <strong className='block'>{name}</strong>
+      <strong className="block">{name}</strong>
       <button
         onClick={chageName}
-        className='p-1 bg-primary-30'
+        className="p-1 bg-primary-30"
       >
         이름 변경
       </button>
